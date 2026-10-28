@@ -1,0 +1,81 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e3f2fd;
+}
+
+.container {
+  position: relative;
+  background-image: url("images/bg.png");
+  background-size: cover;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.master-card-text {
+  color: #fff;
+}
+
+header, .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 48px;
+  margin-right: 10px;
+}
+
+
+header .chip {
+  width: 60px;
+}
+
+
+.container .card-details {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+
+
+h5.number {
+  margin-top: 5px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: gray;
+}
+
+h5.name {
+  margin-top: 20px;
+  color: #fff;
+}
+
+h6 {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 16px;
+  color: gray;
+}
