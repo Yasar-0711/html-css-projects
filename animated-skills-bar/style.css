@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0px 15px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.container .skill-box {
+  width: 100%;
+  margin: 25px 0px;
+}
+
+.skill-box .title {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.skill-box .skill-bar {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 8px;
+  width: 100%;
+  border-radius: 7px;
+  margin-top: 7px;
+}
+
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  background-color:  #4070f4;
+  height: 100%;
+  border-radius: 7px;
+  animation: slide-bar 0.7s ease-in-out forwards;
+  opacity: 0;
+}
+
+.skill-bar .html {
+  width: 90%;
+}
+
+.skill-bar .css {
+  width: 70%;
+  animation-delay: 0.1s;
+}
+
+.skill-bar .javascript {
+  width: 50%;
+  animation-delay: 0.2s;
+}
+
+.skill-bar .python {
+  width: 30%;
+  animation-delay: 0.3s;
+}
+
+
+.skill-per .per-value {
+  position: absolute;
+  right: -14px;
+  top: -22px;
+  font-size: 9px;
+  font-weight: 500;
+  background-color: #4070f4;
+  padding: 3px 6px;
+  color: white;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+/* Animation for Skills Bar */
+
+@keyframes slide-bar {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
