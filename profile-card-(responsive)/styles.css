@@ -1,0 +1,221 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 370px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  background-color: #4070a7; 
+}
+
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color:#4070a7;
+  margin-bottom: 10px;
+}
+
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+
+
+
+.profile-data {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #333;
+}
+
+.profile-data .name {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.profile-data .job {
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+}
+
+
+
+
+.social-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.social-buttons .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 34px;
+  margin: 0 8px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.buttons button {
+  margin: 0 10px;
+  padding: 12px 28px;
+  outline: none;
+  border-radius: 8px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: #4070a7;
+  color: #fff;
+  border: none;
+}
+.primary-btn:hover {
+  background-color: transparent;
+  color: #4070a7;
+  border: 1px solid #4070a7;
+}
+
+
+.secondary-btn {
+  background-color: transparent;
+  color: #4070a7;
+  border: 1px solid #4070a7;
+}
+.secondary-btn:hover {
+  background-color: #4070a7;
+  color: #fff;
+  border: none;
+}
+
+
+
+
+.social-stats {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.social-stats .stat-data {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 20px;
+  color: #333;
+  border-right: 1px solid #888;
+}
+.stat-data:last-child {
+  border-right: none;
+}
+
+.stat-data span {
+  font-weight: 600;
+}
+
+.stat-data i {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+
+
+
+/* Responsive - For Small Devices */
+
+@media (max-width: 460px) {
+
+  .profile-card {
+    width: 300px;
+  }
+  .profile-card::before {
+    height: 130px;
+  }
+
+  .image {
+    height: 130px;
+    width: 130px;
+    margin-bottom: 7px;
+  }
+
+  .profile-data .name {
+    font-size: 18px;
+  }
+
+  .profile-data .job {
+    font-size: 13px;
+  }
+
+  .buttons button {
+    margin: 0 6px;
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+
+  .social-stats .stat-data {
+    padding: 0 15px;
+  }
+
+  .stat-data i {
+    font-size: 16px;
+  }
+}
