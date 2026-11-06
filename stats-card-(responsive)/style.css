@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 40px 20px;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background-color: #334155;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.stat-icon i {
+  color: #ff6b35;
+  font-size: 1.2rem;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #f1f5f9;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+
+
+.stat-card-vertical {
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.stat-card-accent {
+  border-left: 4px solid #ff6b35;
+}
+
+.stat-card-reverse {
+  flex-direction: row-reverse;
+}
+
+.stat-card-colored {
+  background: linear-gradient(180deg, #1e293b, #334155);
+  border-color: #ff6b35;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-value {
+    font-size: 1.3rem;
+  }
+}
